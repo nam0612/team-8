@@ -63,6 +63,8 @@ printf "Bo nho trong: %.2f GB\n" ${totalFree/\./,}
 # curl ifconfig.me
 IP=$(curl -s ifconfig.me)
 echo 'IP:' $IP
+#ip r | grep default #ip router
+#ifconfig | grep broadcast #ip máy mình 
 
 # list users
 info=$(grep "/home/.*:/usr/bin" /etc/passwd)
